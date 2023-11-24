@@ -1,0 +1,40 @@
+# 返回df的行数
+len(df2)
+
+# df中数据的个数
+df2.size
+
+# df中的行数和列数，元组 (行数, 列数)
+df2.shape
+
+# 返回列名和该列数据的类型
+df2.dtypes
+
+# 返回nparray类型的2维数组，每一行数据作为一维数组，所有行数据的数组再构成一个二维数组
+df2.values
+
+# 返回df的所有列名
+df2.columns
+
+# df遍历返回的只是列名
+for col_name in df2:
+    print(col_name)
+
+# 返回df的索引对象
+df2.index
+
+# 返回第一行数据，默认前5行
+df2.head(5)
+
+# 返回倒数第1行数据，默认倒数5行
+df2.tail(5)
+
+# 返回df的基本信息：索引情况，以及各列的名称、数据数量、数据类型
+df2.info() # series对象没有info()方法
+
+# 返回df对象中所有数字类型数据的基础统计信息
+# 返回对象的内容和Series.describe()相同
+df2.describe()
+
+# 返回df对象中全部列数据的基础统计信息
+df2.describe(include='all')
